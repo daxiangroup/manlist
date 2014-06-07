@@ -1,0 +1,61 @@
+    <div class="row">
+        <div class="large-12 columns">
+            <nav class="top-bar" data-topbar>
+                <section class="top-bar-section">
+                    <ul class="left">
+                        <li><a href="{{ URL::route('list', 'a') }}">A</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'b') }}">B</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'c') }}">C</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'd') }}">D</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'e') }}">E</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'f') }}">F</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'g') }}">G</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'h') }}">H</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'i') }}">I</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'j') }}">J</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'k') }}">K</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'l') }}">L</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'm') }}">M</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'n') }}">N</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'o') }}">O</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'p') }}">P</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'q') }}">Q</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'r') }}">R</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 's') }}">S</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 't') }}">T</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'u') }}">U</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'v') }}">V</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'w') }}">W</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'x') }}">X</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'y') }}">Y</a></li>
+                        <li class="divider"></li>
+                        <li><a href="{{ URL::route('list', 'z') }}">Z</a></li>
+                    </ul>
+                </section>
+            </nav>
+        </div>
+    </div>

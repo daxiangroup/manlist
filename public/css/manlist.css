@@ -1,0 +1,64 @@
+[placeholder]:focus::-webkit-input-placeholder {
+  -webkit-transition: opacity 0.5s 0.5s ease;
+  transition: opacity 0.5s 0.5s ease;
+  opacity: 0; }
+
+form {
+  margin-bottom: 0rem; }
+
+nav.top-bar, .row .filter-row {
+  margin-bottom: 1.25rem; }
+
+.top-bar-section > li:not(.has-form) > a:not(.button) {
+  padding: 0 13px; }
+
+.man-name {
+  -webkit-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+  text-transform: capitalize;
+  padding: 2px; }
+  .man-name:hover {
+    background-color: #E18728;
+    color: #333; }
+  .man-name.highlight {
+    background-color: #0c0; }
+
+.letter {
+  text-transform: uppercase; }
+
+.ctr-add, .ctr-filter {
+  position: relative; }
+  .ctr-add input[type="text"], .ctr-filter input[type="text"] {
+    position: relative;
+    left: -1px; }
+  .ctr-add .button, .ctr-filter .button {
+    position: absolute;
+    right: 0.9375rem;
+    width: 6.25rem;
+    padding-top: 12px;
+    padding-bottom: 13px;
+    z-index: 100; }
+    .ctr-add .button.radius, .ctr-filter .button.radius {
+      border-radius: 0rem 0.1875rem 0.1875rem 0rem; }
+
+.ctr-add {
+  top: 1.125rem; }
+
+.navigation .button-group {
+  margin-right: 0rem; }
+.navigation .button.tiny {
+  padding-left: 0.90525rem;
+  padding-right: 0.90525rem;
+  border-top: solid 1px #ccc;
+  border-bottom: solid 1px #ccc; }
+.navigation li:first-of-type .button.tiny {
+  border-left: solid 1px #ccc; }
+.navigation li:last-of-type .button.tiny {
+  border-right: solid 1px #ccc; }
+.navigation .alert-messages {
+  position: absolute;
+  top: 0rem;
+  width: 97%;
+  margin-right: 20px;
+  padding: 10px 14px;
+  display: none; }
