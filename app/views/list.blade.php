@@ -3,7 +3,7 @@
 @section('content')
     <div class="row ctr-filter">
         <div class="columns small-12">
-            <i class="foundicon-question"></i>
+            <i class="icon-help-circled"></i>
             <a href="#" class="button tiny radius">Clear Filter</a>
             {{ Form::text('filter', null, array('id'=>'filter', 'class'=>'text-center placeholder-fix', 'placeholder'=>'Filter the \''.strtoupper($letter).'\' names on this page')) }}
         </div>

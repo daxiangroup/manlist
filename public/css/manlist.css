@@ -81,7 +81,8 @@ nav.top-bar, .row .filter-row {
   z-index: 100;
   top: .625rem;
   left: 1.25rem;
-  cursor: pointer; }
+  cursor: pointer;
+  color: #008cba; }
 
 .ctr-filter-help {
   height: 0rem;

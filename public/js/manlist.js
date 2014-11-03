@@ -52,6 +52,7 @@ var FilterWidget = {
         tempLetter:      '',
         filterStyle:     $('#filter-style'),
         filter:          $('#filter'),
+        filterCtr:       $('.ctr-filter'),
         filterHelp:      $('.ctr-filter-help'),
         filterHelpIcon:  $('.ctr-filter-help i'),
     },
@@ -79,24 +80,10 @@ var FilterWidget = {
 
     bindListener: function() {
         var obj        = this.settings,
-            tempLetter = obj.nameCountLetter.html(),
-            nameCount  = 0,
             helpIcon   = $('.ctr-filter i');
 
         obj.filter.on('keyup', function() {
-
-            if (!this.value) {
-                obj.filterStyle.html("");
-                obj.nameCountLabel.html('Names begin with: ');
-                obj.nameCountLetter.html(tempLetter);
-                FilterWidget.nameCount();
-                return;
-            }
-
-            obj.filterStyle.html(".searchable:not([data-index*=\"" + this.value.toLowerCase() + "\"]) { display: none; }");
-            nameCount = Number(FilterWidget.nameCount());
-            obj.nameCountLabel.html('Name' + (nameCount === 1 ? '' : 's') + ' contain' + (nameCount === 1 ? 's' : '') + ': ');
-            obj.nameCountLetter.html(this.value);
+            FilterWidget.filter();
         });
 
         helpIcon.on('click', function() {
@@ -109,6 +96,33 @@ var FilterWidget = {
             obj.filter.focus();
             e.preventDefault();
         });
+
+        // Clear Filter
+        obj.filterCtr.find('a').on('click', function(e) {
+            obj.filter.val('');
+            obj.filter.focus();
+            FilterWidget.filter();
+            e.preventDefault();
+        });
+    },
+
+    filter: function() {
+        var obj = this.settings,
+            tempLetter = obj.nameCountLetter.html(),
+            nameCount  = 0;
+
+        if (!obj.filter.val()) {
+            obj.filterStyle.html("");
+            obj.nameCountLabel.html('Names begin with: ');
+            obj.nameCountLetter.html(tempLetter);
+            FilterWidget.nameCount();
+            return;
+        }
+
+        obj.filterStyle.html(".searchable:not([data-index*=\"" + obj.filter.val().toLowerCase() + "\"]) { display: none; }");
+        nameCount = Number(FilterWidget.nameCount());
+        obj.nameCountLabel.html('Name' + (nameCount === 1 ? '' : 's') + ' contain' + (nameCount === 1 ? 's' : '') + ': ');
+        obj.nameCountLetter.html(obj.filter.val());
     }
 };
 
