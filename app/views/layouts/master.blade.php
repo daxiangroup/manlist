@@ -37,7 +37,7 @@
     <script>
         $(document).foundation();
     </script>
-    <script src="{{ asset('js/manlist.js') }}"></script>
+    <script src="{{ asset('js/manlist.min.js') }}"></script>
 
     @if (Session::get('err'))
     <script>

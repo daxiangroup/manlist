@@ -17,7 +17,7 @@
 
     <div class="row filter-row">
         <div class="columns small-12 text-center">
-            <span id="name-count-val"></span> of {{{ $totalNames }}} <span id="name-count-label">Names begin with:</span> <span id="name-count-letter" class="letter">{{{ $letter }}}</span>
+            <span id="name-count-val"></span> of {{{ $totalNames }}} <span id="name-count-label">Names begin with:</span> <span id="name-count-letter" data-letter="{{{ $letter }}}" class="letter">{{{ $letter }}}</span>
         </div>
     </div>
 

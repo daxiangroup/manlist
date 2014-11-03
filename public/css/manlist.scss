@@ -23,6 +23,7 @@ nav.top-bar, .row .filter-row {
 }
 
 #back-to-top {
+    opacity: 0;
     position: fixed;
     right: 20px;
     bottom: 60px;
@@ -119,10 +120,11 @@ nav.top-bar, .row .filter-row {
     i {
         position: absolute;
         z-index: 100;
-        top: .625rem;
-        left: 1.25rem;
+        top: .375rem;
+        left: 1rem;
         cursor: pointer;
         color: #008cba;
+        font-size: 1.5625rem;
     }
 }
 

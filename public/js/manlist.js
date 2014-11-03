@@ -82,7 +82,14 @@ var FilterWidget = {
         var obj        = this.settings,
             helpIcon   = $('.ctr-filter i');
 
-        obj.filter.on('keyup', function() {
+        obj.filter.on('keyup', function(e) {
+            var code = e.keyCode || e.which;
+
+            if (code === 27) {
+                FilterWidget.filterClear();
+                return;
+            }
+
             FilterWidget.filter();
         });
 
@@ -99,22 +106,19 @@ var FilterWidget = {
 
         // Clear Filter
         obj.filterCtr.find('a').on('click', function(e) {
-            obj.filter.val('');
-            obj.filter.focus();
-            FilterWidget.filter();
+            FilterWidget.filterClear();
             e.preventDefault();
         });
     },
 
     filter: function() {
         var obj = this.settings,
-            tempLetter = obj.nameCountLetter.html(),
             nameCount  = 0;
 
         if (!obj.filter.val()) {
             obj.filterStyle.html("");
             obj.nameCountLabel.html('Names begin with: ');
-            obj.nameCountLetter.html(tempLetter);
+            obj.nameCountLetter.html(obj.nameCountLetter.data('letter'));
             FilterWidget.nameCount();
             return;
         }
@@ -123,34 +127,16 @@ var FilterWidget = {
         nameCount = Number(FilterWidget.nameCount());
         obj.nameCountLabel.html('Name' + (nameCount === 1 ? '' : 's') + ' contain' + (nameCount === 1 ? 's' : '') + ': ');
         obj.nameCountLetter.html(obj.filter.val());
+    },
+
+    filterClear: function() {
+        var obj = this.settings;
+
+        obj.filter.val('');
+        obj.filter.focus();
+        FilterWidget.filter();
     }
 };
-
-// var LoginWidget = {
-//     settings: {
-//         formLogin:     $('#form-login'),
-//         buttonLogin:   $('#button-login')
-//     },
-
-//     init: function() {
-//         this.bindListener();
-//     },
-
-//     bindListener: function() {
-//         var obj      = this,
-//             settings = this.settings;
-
-//         settings.buttonLogin.on('click', function() {
-//             if (obj.validateFields() === true) {
-//                 settings.formLogin.submit();
-//             }
-//         });
-//     },
-
-//     validateFields: function() {
-//         return true;
-//     }
-// };
 
 var PageWidget = {
     init: function() {
@@ -199,7 +185,6 @@ var AddWidget = {
                 AlertMessagesWidget.message(settings.error);
                 return;
             }
-
 
             settings.formNameAdd.submit();
         });
