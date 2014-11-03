@@ -1,5 +1,5 @@
 <?php
-die(getenv('MANLIST_DB_USER'));
+
 return array(
 
 	/*
@@ -54,7 +54,7 @@ return array(
 
 		'mysql' => array(
 			'driver'    => 'mysql',
-			'host'      => 'localhost',
+			'host'      => getenv('MANLIST_DB_HOST'),
 			'database'  => 'man_list',
 			'username'  => getenv('MANLIST_DB_USER'),
 			'password'  => getenv('MANLIST_DB_PASS'),
