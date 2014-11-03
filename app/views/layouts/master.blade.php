@@ -5,8 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>The Man List | Welcome</title>
         <link rel="stylesheet" href="{{ asset('css/foundation.min.css') }}" />
-        <link rel="stylesheet" href="{{ asset('css/accessibility_foundicons.css') }}" />
-        <link rel="stylesheet" href="{{ asset('css/general_enclosed_foundicons.css') }}" />
+        <link rel="stylesheet" href="{{ asset('css/fontello.css') }}" />
         <link rel="stylesheet" href="{{ asset('css/manlist.css') }}" />
         <script src="{{ asset('js/vendor/jquery.js') }}"></script>
         <script src="{{ asset('js/vendor/modernizr.js') }}"></script>
@@ -32,7 +31,7 @@
         </div>
     </div>
 
-    <i id="back-to-top" class="foundicon-up-arrow" title="Back to the top of the page" />
+    <i id="back-to-top" class="icon-angle-circled-up" title="Back to the top of the page" />
 
     <script src="{{ asset('js/foundation.min.js') }}"></script>
     <script>
