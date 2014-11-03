@@ -4,7 +4,7 @@ web1:
   php_extensions:
     - mbstring
     - mcrypt
-    - mysql
+    - pdo_mysql
     - redis
     - zip
     - xcache
