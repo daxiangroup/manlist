@@ -19,5 +19,4 @@ web1:
   after_deploy:
     - "php artisan cache:clear"
     - "rm -f app/storage/views/*"
-  before_deploy:
-    - "php artisan migrate"
+  
