@@ -125,3 +125,8 @@ nav.top-bar, .row .filter-row {
     background-color: #A7D3AB; }
   .navigation .alert-messages.warning {
     background-color: #E5AE3E; }
+
+@media print {
+  .ctr-add, .navigation, .ctr-filter, .ctr-filter-help {
+    display: none; }
+ }

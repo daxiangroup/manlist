@@ -190,3 +190,9 @@ nav.top-bar, .row .filter-row {
         }
     }
 }
+
+@media print {
+    .ctr-add, .navigation, .ctr-filter, .ctr-filter-help {
+        display: none;
+    }
+}
