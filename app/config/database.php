@@ -1,5 +1,5 @@
 <?php
-die(genenv('MANLIST_DB_USER'));
+die(getenv('MANLIST_DB_USER'));
 return array(
 
 	/*
