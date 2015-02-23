@@ -16,6 +16,9 @@ define('LARAVEL_START', microtime(true));
 
 require __DIR__.'/../vendor/autoload.php';
 
+// Because I'm lazy...
+Dotenv::load(__DIR__.'/../');
+
 /*
 |--------------------------------------------------------------------------
 | Include The Compiled Class File
