@@ -1,4 +1,4 @@
-        <div class="columns small-7 ctr-add">
+        <div class="columns small-12 medium-7 ctr-add">
             {{ Form::open(array('route' => 'names.add', 'id' => 'form-name-add')) }}
             <div class="row postfix-radius">
                 <div class="columns small-12">

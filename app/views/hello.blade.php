@@ -4,7 +4,7 @@
 {{ Form::open(array('route' => 'login.post', 'id' => 'form-login')) }}
 
 <div class="row ctr-login">
-    <div class="columns small-4 small-centered">
+    <div class="columns small-12 medium-4 small-centered">
         {{ Form::submit('Let\'s Go!', array('id'=>'button-login', 'class'=>'button tiny radius')) }}
         {{ Form::password('password', array('placeholder'=>'What is your password?')) }}
     </div>

@@ -31,6 +31,10 @@ nav.top-bar, .row .filter-row {
     cursor: pointer;
     color: #008cba;
 
+    @media only screen and (max-width: 40em) {
+        right: 10px;
+        bottom: 10px;
+    }
 }
 
 .top-bar-section {

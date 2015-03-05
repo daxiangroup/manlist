@@ -24,7 +24,7 @@
     @if ($names)
     <div class="row bordered name-list">
     @foreach ($names as $name)
-        <div class="columns small-3 text-center man-name left searchable @if ($name->name == $highlight) highlight @endif" data-index="{{ strtolower($name->name) }}">
+        <div class="columns small-6 medium-3 text-center man-name left searchable @if ($name->name == $highlight) highlight @endif" data-index="{{ strtolower($name->name) }}">
             {{ $name->name }}
         </div>
     @endforeach

@@ -13,7 +13,7 @@
     <body>
 
     <div class="row">
-        <div class="columns small-5">
+        <div class="columns small-12 medium-5">
             <h1>The Man List</h1>
         </div>
         @if (Auth::check())

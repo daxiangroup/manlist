@@ -19,6 +19,10 @@ nav.top-bar, .row .filter-row {
   font-size: 60px;
   cursor: pointer;
   color: #008cba; }
+  @media only screen and (max-width: 40em) {
+    #back-to-top {
+      right: 10px;
+      bottom: 10px; } }
 
 .top-bar-section > li:not(.has-form) > a:not(.button) {
   padding: 0 13px; }
@@ -80,7 +84,7 @@ nav.top-bar, .row .filter-row {
 .ctr-filter i {
   position: absolute;
   z-index: 100;
-  top: 0.375rem;
+  top: .375rem;
   left: 1rem;
   cursor: pointer;
   color: #008cba;
@@ -112,14 +116,14 @@ nav.top-bar, .row .filter-row {
   /* 20px */
   margin-right: 1.25rem;
   /* 10px / 14px */
-  padding: 0.625rem 0.875rem;
+  padding: .625rem .875rem;
   text-align: right;
   display: none;
   cursor: pointer; }
   .navigation .alert-messages span {
     position: absolute;
     /* 14px */
-    left: 0.875rem;
+    left: .875rem;
     text-align: left; }
   .navigation .alert-messages.success {
     background-color: #A7D3AB; }
@@ -128,5 +132,4 @@ nav.top-bar, .row .filter-row {
 
 @media print {
   .ctr-add, .navigation, .ctr-filter, .ctr-filter-help {
-    display: none; }
- }
+    display: none; } }
